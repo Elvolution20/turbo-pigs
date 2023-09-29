@@ -116,9 +116,9 @@ export default function Mint({
       <div className="mint-title">
         {/* <p className="mintTitle">MINTING - APR 2023</p> */}
         <p className="mintTitle">MINT YOUR TURBO PIGGIES </p>
-        <p className="mintSubtitle">Minting Start on October 23rd, 2023.</p>
-        <p className="mintSubtitle">Mint Cost 50 PEGO.</p>
-        {!web3Modal.cachedProvider && (<p className="mintSubtitle1"> CONNECT TO THE PEGO NETWORK.</p>)}
+        <p className="mintSubtitle">Minting Start on April 23rd, 2023.</p>
+        <p className="mintSubtitle">Mint Cost 0.03 ETH.</p>
+        {!web3Modal.cachedProvider && (<p className="mintSubtitle1"> CONNECT TO THE ETHEREUM NETWORK.</p>)}
       </div>
       <Modal
         visible={modalVisible}
