@@ -114,10 +114,8 @@ export default function Stake({
       <div className="joinBox">
         <div className="joinText">
           <h1>JOIN THE PIGGY VERSE</h1>
-          <p>An anime-inspired alternative universe, where Turbo Pigs are fighting to save the planet from invading Overlords.</p>
-          <p>While also vying for the attention of other Piggies, to prove who is the most super piggies. Fights will ensue!</p>
-          <p>Your NFT will unlock access to the Sty, where you can stake your Piggies, talk to all other holders, plan duels and enter the Piggyverse.</p>
-          <p>As well as play our upcoming suite of competitive P2E games.</p>
+          <p>Introducing the "Piggyverse Chronicles" – a one-of-a-kind NFT project that immerses you in an anime-inspired alternative universe filled with turbocharged Piggy warriors on a mission to save their beloved planet from the clutches of the menacing Overlords.</p>
+          <p>But it's not just about epic battles and intergalactic conquests; it's also a story of love, rivalry, and proving who's the ultimate Super Piggy.</p>
           <a href="/discord" target="_blank">
             <img src='./assets/image/discord1.png' width='20px' height='20px' style={{ marginRight: '20px' }} />
             JOIN THE PIGGYVERSE

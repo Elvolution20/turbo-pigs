@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footerContainer">
       <div className="footer-text">
-        <p>© 2022 TURBO PIGS</p>
+        <p>© 2023 TURBO PIGS</p>
       </div>
       <div className="footer-contact">
         

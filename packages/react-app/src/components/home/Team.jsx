@@ -10,7 +10,7 @@ export default function Team() {
         
         <div className="verseBox">
           <div className="founder">
-            <img src="./assets/image/founder.jpg" />
+            <img src="./assets/image/founder.png" />
             <h2>TURBO</h2>
             <div className="team-text">
               <p>
@@ -27,8 +27,8 @@ export default function Team() {
           </div>
 
           <div className="artist">
-            <img src="./assets/image/artist.jpg" />
-              <h2>DARNET</h2>
+            <img src="./assets/image/artist.png" />
+              <h2>INK_THE_SOUL</h2>
               <div className="team-text">
                 <p>
                   NFT ARTIST
@@ -44,20 +44,20 @@ export default function Team() {
           </div>
 
           <div className="dev">
-            <img src="./assets/image/dev.jpg" />
-            <h2 className="team-text">SQUIDWARD</h2>
+            <img src="./assets/image/dev.png" />
+            <h2 className="team-text">ELVOLUTION</h2>
             <div className="team-text">
               <p>
                 FULL STACK DEV
               </p>
             </div>
             <div className="">
-              <a href="https://www.linkedin.com/in/akira-mori" target="_blank">
-                <span className="team-twitter">
-                    <img src='./assets/image/linkedin_1.png' />
-                </span>
-              </a>
-            </div>
+                <a href="https://Twitter.com/" target="_blank">
+                  <span className="team-twitter">
+                      <img src='./assets/image/twitter.png' />
+                  </span>
+                </a>
+              </div>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function RoadMap() {
                 <img src="./assets/image/Turbo-Phase.png" width="100%" />
                 <div className="tp-phase2-txt">
                   <h2>GAME LAUNCH</h2>
-                  <p>Launching of our Community Game to Earn Rewards . Community Members and Holders will be able to use their Turbo Piggies for accessability and tests.</p>
+                  <p>The Piggyverse game is where your NFTs come to life. Engage in thrilling battles, strategic challenges, and competitive play, using your unique NFT game cards. It's not just about collecting; it's about testing your strategies and mastering the art of conquest in the exhilarating world of GameFi. Join the Piggyverse game, where every card is a key to your next adventure.</p>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function RoadMap() {
                 <img src="./assets/image/Turbo-Farm.png" width="100%" />
                 <div className="piggies-factory-txt">
                   <h2>PIGGIES FARM</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit, harum odio perspiciatis illum eligendi nobis atque consequuntur iste magni.</p>
+                  <p>The Piggyverse Farm is not just a breeding ground; it's a strategic hub that adds depth, excitement, and endless possibilities to your Piggyverse journey. Create your own legacy by breeding, collecting, and battling with your unique game cards. The Piggyverse awaits, where the bonds of love and the thrill of strategy converge in a world of turbocharged adventure!</p>
                 </div>
               </div>
             </div>
@@ -75,31 +75,25 @@ export default function RoadMap() {
           </div>
           <div className="collectBox ownChild">
             <div className="innerown-img">
-              <img src="./assets/image/potion2.png" />
+              <img src="./assets/image/Evolve.png" width="50px" />
             </div>
             <div className="innerown-text">
-              <h2>COLLECT + EVOLVE</h2>
+              <h2>Collect NFTs, Evolve, and Dominate!</h2>
               <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dignissimos asperiores officiis praesentium culpa recusandae. Sequi, quos quia error optio dignissimos possimus corporis velit dolor eum, magni ratione temporibus assumenda libero quod odio. Culpa deserunt consectetur suscipit. Modi totam enim, facilis laborum rem facere, dolorum voluptatum fugiat error saepe est.
+              Your adventure begins with collecting NFTs. Merge them to evolve into unique game cards and unleash their power to dominate challenges and competitions in the thrilling world of GameFi!
               </p>
-              
             </div>
           </div>
-          <div className="communityBox ownChild">
+          <div className="communityBox ownChild2">
             <div className="innerown-img">
               <img src="./assets/image/Turbo-Com.png" />
             </div>
             <div className="innerown-text">
               <h2>COMMUNITY</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore, totam accusantium praesentium magnam voluptatem voluptates ipsa atque ducimus cum aut vel, sit aliquam placeat, maiores iure reprehenderit voluptatibus dolorum nesciunt consequatur. Veritatis in voluptatum temporibus, saepe explicabo minima placeat consequatur culpa quas eveniet debitis laboriosam eos enim autem alias?</p>
+              <p>In the Piggyverse, our community is the heartbeat of our journey. We unite to strategize, compete, and celebrate achievements. Join us in this vibrant hub of camaraderie and collaboration, where your voice matters, your adventures go beyond NFTs, and friendships are forged through shared excitement and victories.</p>
             </div>
           </div>
-          <div className="chatbtnBox">
-            <a href="/discord" target="_blank">
-              <img src='./assets/image/discord1.png' width='20px' height='20px' style={{ marginRight: '10px' }} />
-              COME CHAT WITH US
-            </a>
-          </div>
+
         </div>
       </div>
     </div>

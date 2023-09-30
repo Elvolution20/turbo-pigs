@@ -186,6 +186,14 @@ export const NETWORKS = {
     rpcUrl: `https://api.harmony.one`,
     gasPrice: 1000000000,
   },
+  mainnetPego: {
+    name: "PEGO Mainnet",
+    color: "#00b0ef",
+    chainId: 20201022,
+    blockExplorer: "https://scan.pego.network/",
+    rpcUrl: `https://pegorpc.com`,
+    gasPrice: 1000000000,
+  },
 };
 
 export const NETWORK = chainId => {

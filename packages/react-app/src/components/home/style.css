@@ -59,7 +59,7 @@
 .mainmenu {
     width: inherit;
     display: block;
-    margin: 0 250px;
+    margin: 0 170px;
     border: 3px solid #000 ;
     border-radius: 5px;
     
@@ -796,6 +796,14 @@
     display: flex;
     align-items: flex-start;
     border-bottom: 3px solid #000;
+    margin: 20px 5px;
+    text-align: center;
+}
+
+.ownChild2 {
+    display: flex;
+    align-items: flex-start;
+
     margin: 20px 5px;
     text-align: center;
 }
