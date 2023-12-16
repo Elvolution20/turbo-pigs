@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "Chicks",
-  "sourceName": "contracts/Chicks.sol",
+  "contractName": "Pigs",
+  "sourceName": "contracts/Pigs.sol",
   "abi": [
     {
       "inputs": [

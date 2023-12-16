@@ -54,7 +54,7 @@ export default function Faq() {
 //     },
 //     {
 //       title: 'WHERE CAN WE TALK TO YOU?',
-//       content: `You can either tweet me at @TurboPigsNFT on Twitter. Or preferably join our Discord at https://cluckychicks.app/discord for a chat! If you wish to contact privately, email to Paul@CluckyChicks.app.`
+//       content: `You can either tweet me at @TurboPigsNFT on Twitter. Or preferably join our Discord at https://turbopigs.app/discord for a chat! If you wish to contact privately, email to Paul@TurboPigs.app.`
 //     },
 //     {
 //       title: 'WHAT IS THE SMART CONTRACT ADDRESS OF TURBO PIGS?',

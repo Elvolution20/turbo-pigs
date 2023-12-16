@@ -30,7 +30,7 @@ export default function Mint({
   const [modalVisible, setModalVisible] = useState(false);
   const [termchecked, setTermChecked] = useState(false);
 
-  const serverUrl = "https://clucky-chicks-referrals.onrender.com/add?"
+  const serverUrl = "https://turbo-pigs-referrals.onrender.com/add?"
 
   const axios = require('axios');
 
@@ -81,7 +81,7 @@ export default function Mint({
     setModalVisible(false)
     setMinting(true);
     try {
-      const mintFunction = contract["Chicks"].connect(signer)["mint"];
+      const mintFunction = contract["Pigs"].connect(signer)["mint"];
       const hash = await mintFunction(address, mintCount, {
         value: parseEther((amount * mintCount).toString()),
       });

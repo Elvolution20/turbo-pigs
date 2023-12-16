@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
-contract Egg is ERC20, Ownable, Pausable {
+contract Pork is ERC20, Ownable, Pausable {
 
     bool public _enabled = false; 
     address public stakingContract;
@@ -24,7 +24,7 @@ contract Egg is ERC20, Ownable, Pausable {
     mapping(address => uint256) public holder;
     
 
-    constructor() ERC20("Egg", "EGG") {
+    constructor() ERC20("Pork", "PORK") {
         // _mint(msg.sender, 10076 * (10 ** 18));
         marketingAddress = 0xCB6fe3235443b7Cd4EF4420165ceCBa94925EFF6;
         communityAddress = 0x20C86CCb82AaF796041dc06aEF706cEF8e536100;
