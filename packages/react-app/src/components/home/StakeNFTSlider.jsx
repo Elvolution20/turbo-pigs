@@ -63,8 +63,8 @@ export default function StakeNFTSlider({
 
     const approveHandler = async () => {
     try {
-        const approveFunction = contract["Pigs"].connect(signer)["setApprovalForAll"];
-        const hash = await approveFunction(contract["PigsStaking"].address, true);
+        const approveFunction = contract["Chicks"].connect(signer)["setApprovalForAll"];
+        const hash = await approveFunction(contract["ChicksStaking"].address, true);
     } catch (e) {
         console.log(e);
     }
@@ -74,7 +74,7 @@ export default function StakeNFTSlider({
     setStaking(true);
     try {
       await approveHandler();
-      const stakeFunction = contract["PigsStaking"].connect(signer)["stake"];
+      const stakeFunction = contract["ChicksStaking"].connect(signer)["stake"];
       const hash = await stakeFunction(tokenId);
         setStaking(false);
     } catch (e) {
@@ -86,7 +86,7 @@ export default function StakeNFTSlider({
   const unStakeHandler = async (tokenId) => {
     setUnStaking(true);
     try {
-      const unstakeFunction = contract["PigsStaking"].connect(signer)["unstake"];
+      const unstakeFunction = contract["ChicksStaking"].connect(signer)["unstake"];
       const hash = await unstakeFunction(address, tokenId);
         setUnStaking(false);
     } catch (e) {

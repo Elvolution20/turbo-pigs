@@ -4,7 +4,7 @@
       "name": "mainnet",
       "chainId": "1",
       "contracts": {
-        "Pigs": {
+        "Chicks": {
           "address": "0x54c399e16ec2A508F20B0A2660588FC474eF0495",
           "abi": [
             {
@@ -970,7 +970,7 @@
             }
           ]
         },
-        "Pork": {
+        "Egg": {
           "address": "0x610E5b83F5C69217d065E44415c0d2dFa497F9AB",
           "abi": [
             {
@@ -1631,19 +1631,19 @@
             }
           ]
         },
-        "PigsStaking": {
+        "ChicksStaking": {
           "address": "0xb4E6899b11B9F15D953Cf0F58Fdc6813F5547CAa",
           "abi": [
             {
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "_pigsAddress",
+                  "name": "_chicksAddress",
                   "type": "address"
                 },
                 {
                   "internalType": "address",
-                  "name": "_porkAddress",
+                  "name": "_eggAddress",
                   "type": "address"
                 }
               ],
@@ -1728,7 +1728,7 @@
             },
             {
               "inputs": [],
-              "name": "_pigsAddress",
+              "name": "_chicksAddress",
               "outputs": [
                 {
                   "internalType": "address",
@@ -1741,7 +1741,7 @@
             },
             {
               "inputs": [],
-              "name": "_porkAddress",
+              "name": "_eggAddress",
               "outputs": [
                 {
                   "internalType": "address",
@@ -1959,11 +1959,11 @@
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "pigsAddress",
+                  "name": "chicksAddress",
                   "type": "address"
                 }
               ],
-              "name": "setPigsContract",
+              "name": "setChicksContract",
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
@@ -1972,11 +1972,11 @@
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "porkAddress",
+                  "name": "eggAddress",
                   "type": "address"
                 }
               ],
-              "name": "setPorkContract",
+              "name": "setEggContract",
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
@@ -2147,7 +2147,7 @@
       "name": "rinkeby",
       "chainId": "4",
       "contracts": {
-        "Pigs": {
+        "Chicks": {
           "address": "0x32d5f037421c28d39782E46a33c93699393F189e",
           "abi": [
             {
@@ -3108,19 +3108,19 @@
             }
           ]
         },
-        "PigsStaking": {
+        "ChicksStaking": {
           "address": "0xB20C9C12C2de881e94E300F29926349Ba0219477",
           "abi": [
             {
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "_pigsAddress",
+                  "name": "_chicksAddress",
                   "type": "address"
                 },
                 {
                   "internalType": "address",
-                  "name": "_porkAddress",
+                  "name": "_eggAddress",
                   "type": "address"
                 }
               ],
@@ -3205,7 +3205,7 @@
             },
             {
               "inputs": [],
-              "name": "_pigsAddress",
+              "name": "_chicksAddress",
               "outputs": [
                 {
                   "internalType": "address",
@@ -3218,7 +3218,7 @@
             },
             {
               "inputs": [],
-              "name": "_porkAddress",
+              "name": "_eggAddress",
               "outputs": [
                 {
                   "internalType": "address",
@@ -3436,11 +3436,11 @@
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "pigsAddress",
+                  "name": "chicksAddress",
                   "type": "address"
                 }
               ],
-              "name": "setPigsContract",
+              "name": "setChicksContract",
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
@@ -3449,11 +3449,11 @@
               "inputs": [
                 {
                   "internalType": "address",
-                  "name": "porkAddress",
+                  "name": "eggAddress",
                   "type": "address"
                 }
               ],
-              "name": "setPorkContract",
+              "name": "setEggContract",
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
@@ -3616,7 +3616,7 @@
             }
           ]
         },
-        "Pork": {
+        "Egg": {
           "address": "0xd7EBe81e68F199653cfAC9b913FF8Da09B1AB23E",
           "abi": [
             {

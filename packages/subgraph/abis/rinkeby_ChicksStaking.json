@@ -3,12 +3,12 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_pigsAddress",
+        "name": "_chicksAddress",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "_porkAddress",
+        "name": "_eggAddress",
         "type": "address"
       }
     ],
@@ -93,7 +93,7 @@
   },
   {
     "inputs": [],
-    "name": "_pigsAddress",
+    "name": "_chicksAddress",
     "outputs": [
       {
         "internalType": "address",
@@ -106,7 +106,7 @@
   },
   {
     "inputs": [],
-    "name": "_porkAddress",
+    "name": "_eggAddress",
     "outputs": [
       {
         "internalType": "address",
@@ -324,11 +324,11 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "pigsAddress",
+        "name": "chicksAddress",
         "type": "address"
       }
     ],
-    "name": "setPigsContract",
+    "name": "setChicksContract",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -337,11 +337,11 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "porkAddress",
+        "name": "eggAddress",
         "type": "address"
       }
     ],
-    "name": "setPorkContract",
+    "name": "setEggContract",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

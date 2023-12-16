@@ -20,8 +20,8 @@ export default function Stake({
 
   const [stakedTokens, stakedTokensState] = useState([]);
   const [mintedTokens, mintedTokensState] = useState([]);
-  const [dailyPorks, dailyPorkState] = useState(0);
-  const [totalPorks, totalPorkState] = useState(0);
+  const [dailyEggs, dailyEggState] = useState(0);
+  const [totalEggs, totalEggState] = useState(0);
   const [nftData,   setNFTState] = useState([{}]);
   const [claiming, setClaming] = useState(false);
 
@@ -60,26 +60,26 @@ export default function Stake({
       if(address){
         try {
           //Get user minted tokens
-          const mintedTokenFunc = contract["Pigs"].connect(signer)["walletOfOwner"];
+          const mintedTokenFunc = contract["Chicks"].connect(signer)["walletOfOwner"];
           const mintedTokenIds = await mintedTokenFunc(address);
           mintedTokensState(bigNumArrToArr(mintedTokenIds))
 
           //Get user staked tokens
-          const stakedTokenFunc = contract["PigsStaking"].connect(signer)["getStakedTokens"];
+          const stakedTokenFunc = contract["ChicksStaking"].connect(signer)["getStakedTokens"];
           const stakedTokenIds = await stakedTokenFunc(address);
           stakedTokensState(bigNumArrToArr(stakedTokenIds))
 
           //Get user daily reward tokens
-          const dailyPorkFunc = contract["PigsStaking"].connect(signer)["calcRewardPerDay"];
-          const dailyPorkToken = await dailyPorkFunc(address);
-          dailyPorkState(parseInt(dailyPorkToken["_hex"]))
-          console.log("Daily Pork Tokens = " + dailyPorks);
+          const dailyEggFunc = contract["ChicksStaking"].connect(signer)["calcRewardPerDay"];
+          const dailyEggToken = await dailyEggFunc(address);
+          dailyEggState(parseInt(dailyEggToken["_hex"]))
+          console.log("Daily Egg Tokens = " + dailyEggs);
 
           //Get user total reward tokens
-          const totalPorkFunc = contract["PigsStaking"].connect(signer)["getAllRewardedToken"];
-          const totalPorkTokens = await totalPorkFunc(address);
-          totalPorkState(parseInt(totalPorkTokens["_hex"]))
-          console.log("Total Pork Tokens = " + totalPorks);
+          const totalEggFunc = contract["ChicksStaking"].connect(signer)["getAllRewardedToken"];
+          const totalEggTokens = await totalEggFunc(address);
+          totalEggState(parseInt(totalEggTokens["_hex"]))
+          console.log("Total Egg Tokens = " + totalEggs);
 
         } catch (e) {
           console.log(e);
@@ -100,7 +100,7 @@ export default function Stake({
   const claimAllHandler = async () => {
     setClaming(true);
     try {
-      const stakeFunction = contract["PigsStaking"].connect(signer)["claimAll"];
+      const stakeFunction = contract["ChicksStaking"].connect(signer)["claimAll"];
       const hash = await stakeFunction(address);
       setClaming(false);
     } catch (e) {
@@ -147,8 +147,8 @@ export default function Stake({
                     <p>Staked Tokens: {stakedTokens.length}</p>
                   </div>
                   <div className="stakeNFT-text">
-                    <p>Daily Porks: {dailyPorks}</p>
-                    <p>Total Porks: {totalPorks}</p>
+                    <p>Daily Eggs: {dailyEggs}</p>
+                    <p>Total Eggs: {totalEggs}</p>
                   </div>
                 </div>
 

@@ -5,24 +5,24 @@
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
-  const pigsContract = await deploy("Pigs", {
+  const chicksContract = await deploy("Chicks", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
-    args: ["TurboPigs", "Turbo Pigs", "https://turbopigs.mypinata.cloud/ipfs/QmcZYkrszjk5SymvRTfeYPBfkTLRu518chtJBLykA7e9Zc/"],
+    args: ["CluckyChicks", "Clucky Chicks", "https://cluckychicks.mypinata.cloud/ipfs/QmcZYkrszjk5SymvRTfeYPBfkTLRu518chtJBLykA7e9Zc/"],
     log: true,
   });
 
-  const porkContract = await deploy("Pork", {
+  const eggContract = await deploy("Egg", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
     args: [],
     log: true,
   });
 
-  await deploy("PigsStaking", {
+  await deploy("ChicksStaking", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
-    args: [pigsContract.address, porkContract.address],
+    args: [chicksContract.address, eggContract.address],
     log: true,
   });
 
@@ -66,4 +66,4 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   });
   */
 };
-module.exports.tags = ["Pigs","Pork", "PigsStaking"];
+module.exports.tags = ["Chicks","Egg", "ChicksStaking"];

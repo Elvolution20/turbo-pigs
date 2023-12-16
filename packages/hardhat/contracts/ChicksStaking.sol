@@ -6,17 +6,17 @@ pragma solidity ^0.8.0;
 import '@openzeppelin/contracts/utils/math/SafeMath.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "./Pigs.sol";
-import "./Pork.sol";
+import "./Chicks.sol";
+import "./Egg.sol";
 
-contract PigsStaking is Ownable {
+contract ChicksStaking is Ownable {
   using SafeMath for uint256;
 
   // ERC20 Reward Token
-  address     public _porkAddress;
-  address     public _pigsAddress;
-  Pork         _porkContract;
-  Pigs      _pigsContract;
+  address     public _eggAddress;
+  address     public _chicksAddress;
+  Egg         _eggContract;
+  Chicks      _chicksContract;
 
   address[]   public stakeUsers;
   address[]   public apprUsers;
@@ -51,9 +51,9 @@ contract PigsStaking is Ownable {
     _;
   }
 
-  constructor(address _pigsAddress, address _porkAddress) {
-    setPorkContract(_porkAddress);
-    setPigsContract(_pigsAddress);    
+  constructor(address _chicksAddress, address _eggAddress) {
+    setEggContract(_eggAddress);
+    setChicksContract(_chicksAddress);    
   }
 
 
@@ -65,14 +65,14 @@ contract PigsStaking is Ownable {
     allowClaiming = !allowClaiming;
   }
 
-  function setPorkContract(address porkAddress) public onlyOwner{
-    _porkAddress = porkAddress; 
-    _porkContract =  Pork(_porkAddress);
+  function setEggContract(address eggAddress) public onlyOwner{
+    _eggAddress = eggAddress; 
+    _eggContract =  Egg(_eggAddress);
   }
 
-  function setPigsContract(address pigsAddress) public onlyOwner{
-    _pigsAddress = pigsAddress;
-    _pigsContract = Pigs(pigsAddress);
+  function setChicksContract(address chicksAddress) public onlyOwner{
+    _chicksAddress = chicksAddress;
+    _chicksContract = Chicks(chicksAddress);
   }
 
   /// @notice Stake NFTs and earn reward tokens.
@@ -82,7 +82,7 @@ contract PigsStaking is Ownable {
     
 
     for(uint i =0; i < _tokenIds.length; i++){
-    require(_pigsContract.getNFTUser(_tokenIds[i]) == msg.sender || msg.sender == owner(), "Sender is not owner of current NFT token");
+    require(_chicksContract.getNFTUser(_tokenIds[i]) == msg.sender || msg.sender == owner(), "Sender is not owner of current NFT token");
       _stake(msg.sender, _tokenIds[i]);
     }
   }
@@ -91,7 +91,7 @@ contract PigsStaking is Ownable {
     uint256 _tokenId
   ) external isAllowedStaking {
     
-    require(_pigsContract.getNFTUser(_tokenId) == msg.sender || msg.sender == owner(), "Sender is not owner of current NFT token");
+    require(_chicksContract.getNFTUser(_tokenId) == msg.sender || msg.sender == owner(), "Sender is not owner of current NFT token");
     _stake(msg.sender, _tokenId);
   }
 
@@ -130,8 +130,8 @@ contract PigsStaking is Ownable {
     uint256 _tokenId
   ) internal {
     require (user == msg.sender ||  msg.sender == owner(), "Wrong Sender");
-    _pigsContract.isApprovedForAll(user, address(this));
-    _pigsContract.transferFrom(user, address(this), _tokenId);
+    _chicksContract.isApprovedForAll(user, address(this));
+    _chicksContract.transferFrom(user, address(this), _tokenId);
     addStakeUsers(user);
     stakerToken[user][_tokenId] = block.timestamp;
     stakers[user].push(_tokenId);
@@ -180,7 +180,7 @@ contract PigsStaking is Ownable {
     }
     stakers[user].pop();
 
-    _pigsContract.transferFrom(address(this), user, _tokenId);
+    _chicksContract.transferFrom(address(this), user, _tokenId);
     emit Unstaked(user, _tokenId);
   }
 
@@ -197,7 +197,7 @@ contract PigsStaking is Ownable {
   ) internal isAllowedClaiming {
     uint amount = getRewardedToken(user, tokenId);
     stakerToken[user][tokenId] = block.timestamp;
-    _porkContract.mint(user, amount);
+    _eggContract.mint(user, amount);
     emit RewardPaid(user, amount);
   }
 

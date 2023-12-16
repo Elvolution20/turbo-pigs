@@ -527,7 +527,7 @@ function App() {
 
   const objTokenCount = useContractReader(
     readContracts,
-    "Pigs",
+    "Chicks",
     "getRemainCollections"
   );
   const [remainTokenCount, setTokenCount] = useState(0);
